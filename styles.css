@@ -1,0 +1,78 @@
+html,
+body {
+    height:100%;
+}
+
+img {
+    max-width:100%;
+}
+/* card hover box*/
+
+.hover-box {
+    position:relative;
+}
+
+.hover-box:hover > .card {
+    opacity:0.5;
+    transition:0.5s;
+}
+
+.hover-text {
+    padding:1rem;
+    display:none;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    font-weight:bold;
+}
+
+.hover-box:hover .hover-text {
+    transition:0.5s;
+    display:initial;
+}
+
+/* cover */
+#cover {
+    background:#222 url('img/stars.jpg') center center no-repeat;
+    background-size:cover;
+    color:white;
+    height:100%;
+    text-align:center;
+    display:flex;
+    align-items:center;  
+}
+
+#cover a {
+    color:white;
+    border:1px solid white;
+    margin-top:1.25rem;
+}
+
+#cover-caption{
+    width:100%;
+}
+
+/*section */
+
+.section-content {
+    padding:5rem;
+}
+
+.section-content .card-header{
+    background-color:#fff;
+}
+
+/*about section */
+
+#about {
+    background: url('img/girlincar.jpg') center center no-repeat;
+    background-size:cover;
+}
+
+.about-text {
+    background: rgba(0,0,0,0.8);
+    color:white;
+    padding:1.875rem;
+}
